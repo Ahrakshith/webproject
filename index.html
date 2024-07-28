@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap" rel="stylesheet">
+    <style>
+        * {
+
+            padding: 0;
+            margin: 0;
+
+        }
+
+        main hr {
+            border: 0;
+            background-color: white;
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        header {
+            background-color: rgb(34, 32, 32);
+            color: white;
+
+
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 65px;
+            margin: 20px;
+        }
+
+        nav ul {
+            justify-content: center;
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li a {
+            list-style: none;
+            margin: 0 30px;
+            color: white;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            list-style: none;
+        }
+
+        nav ul li a.active {
+            color: white;
+        }
+
+        .left {
+            display: flex;
+            height: 70%;
+            font-size: 2rem;
+            display: flex;
+            justify-content: space-around;
+            margin: 40px;
+        }
+
+        .right {
+            display: flex;
+            height: 40%;
+            font-size: large;
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        .about {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100mvh;
+            background-image: url('h1.jpg');
+            background-size: cover;
+            color: white;
+            padding: 40px;
+        }
+
+
+
+        .leftsection {
+            flex: 1;
+            padding: 20px;
+            color: white;
+            text-align: center;
+            font-size: 3rem;
+            margin: 65px;
+
+        }
+
+        .purple {
+            color: aqua;
+        }
+
+        nav {
+            text-align: center;
+            margin-top: 25px;
+
+        }
+
+        nav button {
+            font-size: large;
+            margin: 10px;
+            padding: 15px;
+            cursor: pointer;
+            background-color: white;
+            color: black;
+            border: 25px;
+        }
+
+        #about-me {
+            background-color: rgb(36, 33, 33);
+            display: flex;
+            /* margin: 15px; */
+            /* height: 60%; */
+
+        }
+
+        .imgleft1 {
+            flex: 1;
+            width: 100%;
+            margin: 65px;
+            overflow: hidden;
+
+        }
+
+        .imgleft1 img {
+
+            width: 95%;
+            height: 85%;
+            max-height: 100%;
+        }
+
+        .about-meright {
+            flex: 1;
+            width: 100%;
+            color: white;
+            margin: 60px;
+
+            font-size: 1.2rem;
+
+            justify-content: space-around;
+            padding: 20px;
+            text-align: left;
+        }
+
+        .btn-group {
+
+            margin: 60px 0;
+        }
+
+        .btn-group .btn {
+            border-color: #d5d5d5;
+            color: #fff;
+            background-color: #333;
+            padding: 12px 25px;
+            margin: 5px 0;
+            margin-right: 7px;
+            border-radius: 30px;
+            border: 2px solid #e5e5e5;
+            box-shadow: 0 10px 10px -8px rgb(0 0 0 / 78%);
+        }
+
+        .btn.active {
+            border-color: #fed700;
+        }
+
+        .skills-section {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            margin: 40px 0;
+        }
+
+        .skills-content {
+            flex: 1;
+            text-align: left;
+            padding: 0 20px;
+        }
+
+        .skills-section h1 {
+            font-size: 1.7rem;
+        }
+
+        .skills-section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .skills-section li {
+            margin: 8px 0;
+        }
+
+        .skills-image {
+            flex: 1;
+            text-align: right;
+        }
+
+        .skills-image img {
+            width: 100%;
+            border-radius: px;
+        }
+
+        * {
+            box-sizing: border-box;
+
+        }
+
+        .container {
+            margin: 10px;
+            width: 100%;
+            background-color: #ddd;
+
+        }
+
+        .skills {
+
+            text-align: left;
+            padding-top: 1.5px;
+            padding-bottom: 1.5px;
+            color: white;
+        }
+
+        .html {
+            width: 90%;
+            background-color: rgb(41, 108, 196);
+        }
+
+
+        .css {
+            width: 45%;
+            background-color: #2890e4;
+        }
+
+        .c {
+            width: 45%;
+            background-color: #2196F3;
+        }
+
+        .cpp {
+            width: 80%;
+            background-color: #50a8f0;
+        }
+
+        .java {
+            width: 20%;
+            background-color: rgb(97, 159, 241);
+        }
+
+        #contact-me {
+            display: flex;
+        }
+
+        .education-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .education-box {
+            width: 30%;
+            padding: 20px;
+            background-color: rgb(44, 40, 40);
+            margin: 10px;
+            color: white;
+        }
+
+        .center {
+            align-self: center;
+            margin: 0 auto;
+        }
+
+        .education h1 {
+            text-align: left;
+            font-size: 1.7rem;
+            color: white;
+
+        }
+
+        .education-title {
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        .contact-section {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgb(37, 35, 37);
+            color: white;
+            padding: 80px;
+            margin: 40px 0;
+        }
+
+        .contact-section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .contact-section form {
+            display: grid;
+            gap: 15px;
+        }
+
+        .contact-section label {
+            font-size: 1rem;
+        }
+
+        .contact-section input,
+        .contact-section textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+
+        .contact-section button {
+            background-color: #2c302c;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+
+        }
+
+        .contact-section button:hover {
+            background-color: #272927;
+        }
+
+        footer {
+            height: 100px;
+            background-color: rgb(36, 34, 34);
+            color: white;
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 120px;
+            justify-content: space-around;
+            list-style: none;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer-first {
+
+            display: flex;
+        }
+
+        .footer-second ul {
+            display: flex;
+            list-style: none;
+        }
+
+        .footer-second li {
+            margin-right: 20px;
+            list-style: none;
+        }
+
+        .footer-third ul {
+            display: flex;
+            list-style: none;
+        }
+
+        .footer-third li {
+            margin-right: 20px;
+            list-style: none;
+        }
+
+        .footer-fourth {
+
+            display: flex;
+        }
+
+        .footer-second a,
+        .footer-third a {
+            text-decoration: none;
+            color: rgb(236, 226, 226);
+        }
+
+        .footer-second a:hover,
+        .footer-third a:hover {
+            color: rgb(142, 59, 159);
+        }
+    </style>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="left">Portfolio</div>
+            <div class="right">
+
+                <ul>
+
+                    <li><a href="#about-me">About-me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact-me">Contact Me</a></li>
+                </ul>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="about">
+            <section class="leftsection">
+                This Is <span class="purple"> Rakshith</span> Portfolio
+                <div>I Am Pursuing engeering In </div>
+
+                <span id="element"></span>
+
+
+
+            </section>
+        </section>
+        <hr>
+        </section>
+
+        <section id="about-me">
+
+            <section class="imgleft1">
+                <img src="h6.jpg" alt="img">
+            </section>
+            <section class="about-meright">
+                <h2>About Me</h2><br><br>
+                <p>Hello there! I'm Rakshith, currently navigating the exciting journey of my third year in ISE at
+                    JSSSTU.
+                    Education has always been a cornerstone of my life, and each year brings new challenges and
+                    discoveries.
+                    <br>
+                    <br>
+                    In this phase of my academic adventure, I find myself delving deeper into the intricacies of
+                    computer interactions, exploring the nuances that make it both challenging and immensely rewarding.
+                    From tackling complex theories to engaging in hands-on projects, every class adds a layer to my
+                    understanding of the subject.
+                    <br>
+                    <br>
+                    Outside the classroom, I'm passionate about riding, adventure and exploring new things. These
+                    pursuits not only provide a well-needed break from textbooks but also contribute to my holistic
+                    growth. Whether it's is either exploring, riding, or an off time, I believe in maintaining a balance
+                    between academic rigor and personal interests.
+
+                </p>
+
+
+                <div class="btn-group">
+                    <a href="cv.pdf" class="btn active">Download CV</a>
+
+                </div>
+            </section>
+
+        </section>
+        <hr>
+
+        <section id="skills" class="skills-section">
+            <div class="skills-content">
+                <h1>Skills</h1>
+                <ul>
+                    <li>Languages: HTML, CSS, JavaScript, Python, C, C++, Java</li>
+                    <li>Data Structures</li>
+                    <li>Database Management System</li>
+                    <li>Operating System</li>
+                </ul>
+                <section class="skills-graph">
+                    <p>HTML</p>
+                    <div class="container">
+                        <div class="skills html">70%</div>
+                    </div>
+                    <p>CSS</p>
+                    <div class="container">
+                        <div class="skills css">45%</div>
+                    </div>
+                    <p>C</p>
+                    <div class="container">
+                        <div class="skills c">80%</div>
+                    </div>
+                    <p>C++</p>
+                    <div class="container">
+                        <div class="skills cpp">80%</div>
+                    </div>
+
+                    <p>Java</p>
+                    <div class="container">
+                        <div class="skills java">50%</div>
+                    </div>
+
+            </div>
+            <div class="skills-image">
+                <!-- Add your image here -->
+                <img src="h5.jpg" alt="Skills Image">
+            </div>
+        </section>
+        <hr>
+        </section>
+        <section id="education" class="education">
+            <section class="education-title">Education</section>
+            <div class="education-container">
+                <div class="education-box">
+                    <h2>10th</h2>
+                    <p>School:Sri vivekananda English Medium School</p>
+                    <p>Year of Passing: 2019</p>
+
+                </div>
+                <div class="education-box">
+                    <h2>12th</h2>
+                    <p> College: vivekanada PU College</p>
+                    <p>Stream:Science</p>
+                    <p>Year of passing : 2021</p>
+                </div>
+            </div>
+            <br>
+            <div class="education-box center">
+                <h2>JSS Science and Technology University</h2>
+                <p>Bachelor of Technology in Information Science</p>
+                <p>Year of Enrollment: 2021</p>
+                <p>Expected Graduation: 2025</p>
+            </div>
+        </section>
+        <hr>
+
+        </section>
+        <section id="contact-me" class="contact-section">
+            <h2>Contact Me</h2>
+            <div class="contact">
+                <form action="https://formspree.io/f/mwkddorl" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+        </section>
+        >
+
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['3rd year', 'Information Science',],
+            typeSpeed: 50,
+        });
+    </script>
+
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const navLinks = document.querySelectorAll('nav a');
+
+            navLinks.forEach(function (link) {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+
+                    if (targetElement) {
+                        targetElement.scrollIntoView({ behavior: 'smooth' });
+
+                        // Remove the "active" class from all links
+                        navLinks.forEach(function (otherLink) {
+                            otherLink.classList.remove('active');
+                        });
+
+                        // Add the "active" class to the clicked link
+                        this.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Rakshith Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+
+                    <li><a href="#about-me">About-me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact-me">Contact Me</a></li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li><a href="#terms">Terms</a></li>
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
